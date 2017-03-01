@@ -121,16 +121,13 @@ h5{
   border-bottom-color: rgba(255,255,255,.25);
 }
 
-@media (min-width: 48em) {
-  .masthead-brand {
-    float: left;
-  }
-  .nav-masthead {
-    float: right;
-  }
+.octicon {
+  display: inline-block;
+  vertical-align: text-top;
+  fill: #fff;
+  height: 64px;
 }
 
-.navbar-brand img {
-	height: 50px;
-	text-align: center;
+.navbar-brand img{
+	height: 40px;
 }
