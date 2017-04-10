@@ -12,7 +12,7 @@ body{
 body{
 	-webkit-font-smoothing:antialiased;
 	text-rendering: optimizeLegibility;
-	color: #fff;
+	color: #000;
 }
 
 h1,
@@ -20,7 +20,8 @@ h2,
 h3,
 h4,
 h5{
-	color: #fff;
+	color: inherit;
+	text-align: center;
 }
 /*Navigation Style*/
 
@@ -72,6 +73,10 @@ h5{
 	margin: 5px;
 }
 
+section{
+	padding: 30px;!important
+}
+
 /*Why Nucleus Styles*/
 .why-nucleus{
 	background: #454545;
@@ -83,7 +88,7 @@ h5{
 }
 
 .why-border{
-	padding: 15px;
+	padding: 30px;
 	line-height: 1.5em
 }
 
