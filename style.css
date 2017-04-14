@@ -108,6 +108,10 @@ h5 {
 
 /*Team Styles*/
 
+.nucleus-team{
+    margin-bottom: 20px;
+}
+
 .team-text {
     padding: 15px;
 }
@@ -205,11 +209,17 @@ h5 {
     .dev-card {
         line-height: 1.5;
     }
-    .footer {
+    .footer-resources {
         position: fixed;
-        left: 0px;
-        bottom: 0px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1030;
+    }
+    
+    .footer {
         height: 60px;
         width: 100%;
+        display: block;
     }
 }
