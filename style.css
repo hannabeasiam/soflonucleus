@@ -1,148 +1,165 @@
 /* General Styles */
-@font-face{
-	font-family: SlimJoe;
-	src: url(fonts/Slim-Joe.otf);
+
+@font-face {
+    font-family: SlimJoe;
+    src: url(fonts/Slim-Joe.otf);
 }
 
 *,
 *:before,
-*:after{
-	margin: 0;
-	padding: 0;
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-
 
 html,
-body{
-	height: 100%
+body {
+    height: 100%
 }
 
-body{
-	-webkit-font-smoothing:antialiased;
-	text-rendering: optimizeLegibility;
-	color: #fff;
+body {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    color: #fff;
 }
 
 h1,
 h2,
 h3,
 h4,
-h5{
-	color: inherit;
+h5 {
+    color: inherit;
 }
+
+
 /*Navigation Style*/
 
 
 /* Stage Styles */
+
 #stage {
-  background: url('images/florida.jpg') no-repeat 50% 50% fixed;
-  background-size: cover;
-  color: white;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
+    background: url('images/florida.jpg') no-repeat 50% 50% fixed;
+    background-size: cover;
+    color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
-#stage-caption{
-	font-size: 1.4rem;
-	font-weight: 200;
-	max-width: 60rem;
-	margin: 0 auto;
-	text-align: center;
+#stage-caption {
+    font-size: 1.4rem;
+    font-weight: 200;
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: center;
 }
 
-#stage-caption h1{
-	font-family: 'SlimJoe', sans-serif;
-	font-weight: 100;
-	font-size: 4.1rem;
-	letter-spacing: 0.1em;
-	text-transform: uppercase;
+#stage-caption h1 {
+    font-family: 'SlimJoe', sans-serif;
+    font-weight: 100;
+    font-size: 4.1rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
 
-#stage-caption h2{
-	font-family: 'Open Sans' sans-serif   ;
-	font-size: 1.5rem;
+#stage-caption h2 {
+    font-family: 'Open Sans' sans-serif;
+    font-size: 1.5rem;
 }
 
-.btn-1{
-	color: #fff;
-	background-color: #5adbff;
-	border-color: #5adbff;
+.btn-1 {
+    color: #fff;
+    background-color: #5adbff;
+    border-color: #5adbff;
 }
 
-.horizontal-line{
-	background: #222;
-	height: 2px;
-	width: 150px;
-	display: inline-block;
-	align-self: center;
-	margin: 5px;
+.horizontal-line {
+    background: #222;
+    height: 2px;
+    width: 150px;
+    display: inline-block;
+    align-self: center;
+    margin: 5px;
 }
+
 
 /*Why Nucleus Styles*/
-.why-nucleus{
-	background: #454545;
-	color: #fff;
+
+.why-nucleus {
+    background: #454545;
+    color: #fff;
 }
 
-.why-text{
-	margin: 10px;
+.why-text {
+    margin: 10px;
 }
 
-.why-border{
-	padding: 15px;
-	line-height: 1.5em
+.why-border {
+    padding: 15px;
+    line-height: 1.5em
 }
 
-.fa1{
-	font-size: 32px!important;
+.fa1 {
+    font-size: 32px!important;
 }
+
+
 /*Team Styles*/
 
-.team-text{
-	padding: 15px;	
+.team-text {
+    padding: 15px;
 }
 
-.footer{
-	width: 100%;
-	height: 60px;
-	background-color: #000;
+.footer {
+    width: 100%;
+    height: 60px;
+    background-color: #000;
 }
 
-.footer p{
-	text-align: center;
-	padding-top: 20px;
-	margin: 0 auto;
+.footer p {
+    text-align: center;
+    padding-top: 20px;
+    margin: 0 auto;
 }
 
 .nav-link {
-  padding: .25rem 0;
-  font-weight: bold;
-  color: rgba(255,255,255,.5);
-  background-color: transparent;
-  border-bottom: .25rem solid transparent;
+    padding: .25rem 0;
+    font-weight: bold;
+    color: rgba(255, 255, 255, .5);
+    background-color: transparent;
+    border-bottom: .25rem solid transparent;
 }
 
 .nav-link:hover,
 .nav-link:focus {
-  border-bottom-color: rgba(255,255,255,.25);
+    border-bottom-color: rgba(255, 255, 255, .25);
 }
 
 .octicon {
-  display: inline-block;
-  vertical-align: text-top;
-  fill: #fff;
-  height: 64px;
+    display: inline-block;
+    vertical-align: text-top;
+    fill: #fff;
+    height: 64px;
 }
 
-.navbar-brand img{
-	height: 40px;
+.navbar-brand img {
+    height: 40px;
 }
 
+.dev-card {
+    position: relative;
+    line-height: .85;
+    margin-bottom: 2em;
+    overflow: hidden;
+}
 
-.card-overlay {
+.dev-card img {
+    max-width: 100%;
+}
+
+.dev-card-overlay {
     opacity: 0;
     color: #fff;
     position: absolute;
@@ -156,26 +173,43 @@ h5{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgba(0,0,0, .65);
+    background: rgba(0, 0, 0, .65);
     transition-property: opacity;
     transition-duration: .5s;
 }
 
-.card-overlay:hover{
+.dev-card-overlay:hover {
     opacity: 1;
 }
 
-.btn-primary{
-	background: transparent;
-	color: #d97f07;
-	border: 2px solid #d97f07;
-
+.btn-primary {
+    background: transparent;
+    color: #d97f07;
+    border: 2px solid #d97f07;
 }
 
-.btn-primary:hover{
-	color: white;
-	background: #d97f07;
+.btn-primary:hover {
+    color: white;
+    background: #d97f07;
 }
 
-.resources{
-	color: #454545;
+.resources {
+    color: #454545;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+@media only screen and (min-width: 768px) {
+    .dev-card {
+        line-height: 1.5;
+    }
+    .footer {
+        position: fixed;
+        left: 0px;
+        bottom: 0px;
+        height: 60px;
+        width: 100%;
+    }
+}
