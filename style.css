@@ -4,6 +4,15 @@
 	src: url(fonts/Slim-Joe.otf);
 }
 
+*,
+*:before,
+*:after{
+	margin: 0;
+	padding: 0;
+}
+
+
+
 html,
 body{
 	height: 100%
@@ -20,14 +29,14 @@ h2,
 h3,
 h4,
 h5{
-	color: #fff;
+	color: inherit;
 }
 /*Navigation Style*/
 
 
 /* Stage Styles */
 #stage {
-  background: url('images/florida.jpg') no-repeat center center fixed;
+  background: url('images/florida.jpg') no-repeat 50% 50% fixed;
   background-size: cover;
   color: white;
   height: 100%;
@@ -130,4 +139,35 @@ h5{
 
 .navbar-brand img{
 	height: 40px;
+}
+
+.card{
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-content: space-around;
+}
+
+.card-img-overlay{
+	padding: 15px;
+}
+
+.text-card{
+	color: rgba(255,255,255,.85);
+}
+
+.btn-primary{
+	background: transparent;
+	color: #d97f07;
+	border: 2px solid #d97f07;
+
+}
+
+.btn-primary:hover{
+	color: white;
+	background: #d97f07;
+}
+
+.resources{
+	color: #454545;
 }
