@@ -1,0 +1,133 @@
+/*Navigation Style*/
+
+
+/* Stage Styles */
+#stage {
+  background: url('images/florida.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#stage-caption{
+	font-size: 1.4rem;
+	font-weight: 200;
+	max-width: 60rem;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#stage-caption h1{
+	font-family: 'SlimJoe', sans-serif;
+	font-weight: 100;
+	font-size: 4.1rem;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+#stage-caption h2{
+	font-family: 'Open Sans' sans-serif   ;
+	font-size: 1.5rem;
+}
+
+.btn-1{
+	color: #fff;
+	background-color: #5adbff;
+	border-color: #5adbff;
+}
+
+.horizontal-line{
+	background: #222;
+	height: 2px;
+	width: 150px;
+	display: inline-block;
+	align-self: center;
+	margin: 5px;
+}
+
+/*Team Styles*/
+
+.team-text{
+	padding: 15px;	
+}
+
+.section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.section {
+	display: flexbox;
+	justify-content: space-between;
+	flex-flow: row;
+	align-content: center;
+}
+
+.event-info {
+	flex: 400;
+	float: left;
+	padding-left: 20%;
+}
+
+.event-location {
+	flex: 200;
+	float: right;
+	padding-right: 15%;
+}
+
+.heading {
+	text-align: center;
+}
+
+p { 
+	width: 400px;
+	word-wrap: break-word;
+}
+		
+.footer{
+	width: 100%;
+	height: 60px;
+	background-color: #000;
+}
+
+.footer p{
+	text-align: center;
+	padding-top: 20px;
+	margin: 0 auto;
+}
+
+
+.nav-link {
+  padding: .25rem 0;
+  font-weight: bold;
+  color: rgba(255,255,255,.5);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  border-bottom-color: rgba(255,255,255,.25);
+}
+
+.octicon {
+  display: inline-block;
+  vertical-align: text-top;
+  fill: #fff;
+  height: 64px;
+}
+
+.navbar-brand img{
+	height: 40px;
+}
+
+#top-image {
+    height: 500px;
+    width: 100%;
+}
+
+
