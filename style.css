@@ -1,16 +1,11 @@
 /* General Styles */
-
-@font-face {
-    font-family: SlimJoe;
-    src: url(fonts/Slim-Joe.otf);
-}
-
 *,
-*:before,
-*:after {
+*::before,
+*::after {
+    
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 html,
@@ -19,10 +14,13 @@ body {
 }
 
 body {
+    
+    color: #fff;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
-    color: #fff;
+    
 }
+
 
 h1,
 h2,
@@ -30,6 +28,7 @@ h3,
 h4,
 h5 {
     color: inherit;
+    font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -39,40 +38,41 @@ h5 {
 /* Stage Styles */
 
 #stage {
+    align-items: center;
     background: url('images/florida.jpg') no-repeat 50% 50% fixed;
     background-size: cover;
     color: white;
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
     height: 100%;
     width: 100%;
-    display: flex;
-    align-items: center;
 }
 
 #stage-caption {
-    font-size: 1.4rem;
-    font-weight: 200;
-    max-width: 60rem;
-    margin: 0 auto;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
 }
 
-#stage-caption h1 {
-    font-family: 'SlimJoe', sans-serif;
-    font-weight: 100;
+.cover-heading {
     font-size: 4.1rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
 
-#stage-caption h2 {
-    font-family: 'Open Sans' sans-serif;
+.cover-lead {
     font-size: 1.5rem;
+    text-align: center;
 }
 
 .btn-1 {
     color: #fff;
     background-color: #5adbff;
     border-color: #5adbff;
+    width: 50%;
+    margin: 0 auto;
 }
 
 .horizontal-line {
@@ -129,11 +129,12 @@ h5 {
 }
 
 .nav-link {
-    padding: .25rem 0;
-    font-weight: bold;
-    color: rgba(255, 255, 255, .5);
     background-color: transparent;
     border-bottom: .25rem solid transparent;
+    color:  rgb(255,255,255),
+            rgba(255, 255, 255, .5);
+    font-weight: bold;
+    padding: .25rem 0;
 }
 
 .nav-link:hover,
@@ -144,7 +145,7 @@ h5 {
 .octicon {
     display: inline-block;
     vertical-align: text-top;
-    fill: #fff;
+    color: #fff;
     height: 64px;
 }
 
@@ -188,21 +189,22 @@ h5 {
 
 .btn-primary {
     background: transparent;
-    color: #d97f07;
     border: 2px solid #d97f07;
+    color: #d97f07;
 }
 
 .btn-primary:hover {
-    color: white;
+    
     background: #d97f07;
+    color: white;
 }
 
 .resources {
+    align-content: space-around;
     color: #454545;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-content: space-around;
 }
 
 @media only screen and (min-width: 768px) {
@@ -210,16 +212,16 @@ h5 {
         line-height: 1.5;
     }
     .footer-resources {
-        position: fixed;
-        right: 0;
         bottom: 0;
         left: 0;
+        position: fixed;
+        right: 0;
         z-index: 1030;
     }
     
     .footer {
+        display: block;
         height: 60px;
         width: 100%;
-        display: block;
     }
 }
