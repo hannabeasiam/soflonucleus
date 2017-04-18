@@ -72,10 +72,15 @@ h5 {
     flex-direction: column;
     justify-content: space-around;
     align-content: space-around;
+	/*round border*/
+    border-radius: 25px;
+    background: #5adbff;
+    padding: 20px;
+  
 }
 
 .cover-heading {
-    font-size: 4.1rem;
+    font-size: 4.3rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
@@ -95,6 +100,7 @@ h5 {
 /*Why Nucleus Styles*/
 
 .why-nucleus {
+	padding: 30px;
     background: #454545;
     color: #fff;
 }
@@ -114,7 +120,22 @@ h5 {
     color: #fff;
     height: 64px;
 }
+/*Our team Styles*/
 
+.nucleus-team{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.our-team{
+	text-align: center;
+	padding: 15px;
+	font-size: 35px;
+	
+}
+.card{
+	margin-top: 15px;
+	
+}
 /*Footer Styles*/
 
 .footer {
@@ -127,6 +148,7 @@ h5 {
     text-align: center;
     padding-top: 20px;
     margin: 0 auto;
+    color: white;
 }
 
 /*Resources Styles*/
