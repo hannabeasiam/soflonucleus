@@ -1,0 +1,231 @@
+/* General Styles */
+*,
+*::before,
+*::after {
+    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: inherit;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/*Navigation Styles*/
+
+.nav-link {
+    background-color: transparent;
+    border-bottom: .25rem solid transparent;
+    color:  rgb(255,255,255),
+            rgba(255, 255, 255, .5);
+    font-weight: bold;
+    padding: .25rem 0;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.navbar-brand img {
+    height: 40px;
+}
+
+
+/* Stage Styles */
+
+#stage {
+    align-items: center;
+    background: url('images/florida.jpg') no-repeat 50% 50% fixed;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    height: 100%;
+    width: 100%;
+}
+
+#stage-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.cover-heading {
+    font-size: 4.1rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.cover-lead {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.btn-1 {
+    color: #fff;
+    background-color: #5adbff;
+    border-color: #5adbff;
+    width: 50%;
+    margin: 0 auto;
+}
+/*Why Nucleus Styles*/
+
+.why-nucleus {
+    background: #454545;
+    color: #fff;
+}
+
+.why-text {
+    margin: 10px;
+}
+
+.why-border {
+    padding: 15px;
+    line-height: 1.5em
+}
+
+.octicon {
+    display: inline-block;
+    vertical-align: text-top;
+    color: #fff;
+    height: 64px;
+}
+
+/*Footer Styles*/
+
+.footer {
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+}
+
+.footer p {
+    text-align: center;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
+/*Resources Styles*/
+
+.dev-card {
+    position: relative;
+    line-height: .85;
+    margin-bottom: 2em;
+    overflow: hidden;
+}
+
+.dev-card img {
+    max-width: 100%;
+}
+
+.dev-card-overlay {
+    opacity: 0;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, .65);
+    transition-property: opacity;
+    transition-duration: .5s;
+}
+
+.dev-card-overlay:hover {
+    opacity: 1;
+}
+
+.btn-primary {
+    background: transparent;
+    border: 2px solid #d97f07;
+    color: #d97f07;
+}
+
+.btn-primary:hover {
+    
+    background: #d97f07;
+    color: white;
+}
+
+.resources {
+    align-content: space-around;
+    color: #454545;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.fa-twitter,
+.fa-linkedin,
+.fa-github{
+    color: #222;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+}
+
+.fa-twitter:hover,
+.fa-linkedin:hover,
+.fa-github:hover{
+    font-size: 32px;
+}
+
+.fa-twitter:hover{
+    color: #55acee;
+}
+
+.fa-linkedin:hover{
+    color: #0173b2;
+}
+
+.fa-github:hover{
+    color: #0d2636
+}
+
+@media only screen and (min-width: 768px) {
+    .dev-card {
+        line-height: 1.5;
+    }
+    .footer-resources {
+        bottom: 0;
+        left: 0;
+        position: fixed;
+        right: 0;
+        z-index: 1030;
+    }
+    
+    .footer {
+        display: block;
+        height: 60px;
+        width: 100%;
+    }
+}
