@@ -157,6 +157,8 @@ h5 {
     color: white;
 }
 
+
+
 /*Resources Styles*/
 
 .dev-card {
@@ -238,19 +240,20 @@ h5 {
     .dev-card {
         line-height: 1.5;
     }
-    .footer-resources {
-        bottom: 0;
-        left: 0;
-        position: fixed;
-        right: 0;
-        z-index: 1030;
-    }
     
     .footer {
         display: block;
         height: 60px;
         width: 100%;
     }
+    
+    .footer-resources {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030;
+}
 }
 
 @media (max-width: 375px) {
