@@ -9,13 +9,13 @@
 }
 
 html,
-body {
+body{
     height: 100%
 }
 
 body {
     
-    color: #fff;
+    color: #454545;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     
@@ -134,7 +134,13 @@ h5 {
 }
 .card{
 	margin-top: 15px;
+    min-height: 100%;
+    
 	
+}
+
+.btn-margin{
+    margin: 10px;
 }
 /*Footer Styles*/
 
@@ -214,12 +220,6 @@ h5 {
     color: #222;
     transition-duration: 500ms;
     transition-timing-function: ease-in-out;
-}
-
-.fa-twitter:hover,
-.fa-linkedin:hover,
-.fa-github:hover{
-    font-size: 32px;
 }
 
 .fa-twitter:hover{
